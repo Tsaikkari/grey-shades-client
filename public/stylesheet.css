@@ -1,0 +1,340 @@
+body {
+  background-color: #cfcfcf;
+  margin: 0;
+}
+
+/*invisible things*/
+.greys-invisible, .header-invisible, .boxes-invisible {
+  display: none;
+}
+
+section {
+  text-align: center;
+  padding-top: 10px;
+}
+
+h1 {
+  color: #7f7f7f;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+/*text on the boxes*/
+p {
+  text-align: center;
+  padding-top: 33%;
+  font-size: 2.7rem;
+}
+
+.main-header {
+  padding-top: 30px;
+}
+
+#two-divs-screen, .greys-grid-screen {
+  position: absolute;
+  padding: 3% 15%;
+  text-align: center;
+}
+
+.black, .white {
+  width: 370px;
+  height: 450px;
+}
+
+/*black box*/
+.black {
+  background-color: black;
+  color: white;
+  float: left;
+  letter-spacing: 2rem;
+  padding-left: 6%;
+  padding-top: 1.4%;
+  position: relative;
+}
+
+/*white box*/
+.white {
+  background-color: white;
+  color: black;
+  float: right;
+  letter-spacing: 0.7rem;
+  position: relative;
+}
+ 
+/** words on the white box **/
+.blk {
+  font-size: 2.9rem;
+  padding-left: 13%;
+}
+
+p.wht {
+  font-size: 2.7rem;
+  padding-right: 7%;
+  padding-top: 0;
+}
+
+p.and {
+  padding-right: 29%;
+  padding-top: 0;
+}
+
+/*animations*/
+.black.moved {
+  animation: mymove_1 1s ease;
+}
+
+.white.animated {
+  animation: myanimation 1s ease;
+}
+
+/*buttons*/
+/* they say -button */
+#move-div {
+  box-shadow: 3px 4px 0px 0px #899599;
+  background: linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+  color: #000;
+  border-radius: 5px;
+	border: 1px solid #d6bcd6;
+  display: inline-block;
+  cursor: pointer;
+  text-shadow:0px 1px 0px #e1e2ed;
+  margin-left: 45%;
+}
+
+#move-div:hover {
+	background: linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+	background-color: #bab1ba;
+}
+
+#move-div:active {
+	position: relative;
+	top: 1px;
+}
+
+/* second page */
+/*grey-grid buttons*/
+.greybutton {
+	box-shadow: 1px 4px 1px 2px #899599;
+	border-radius: 5px;
+	border: 1px solid #d6bcd6;
+  display: inline-block;
+	cursor: pointer;
+	color: #000;
+  font-size: 0.75rem;
+  height: 2.5rem;
+  padding: 7px 7px;
+	text-decoration: none;
+  text-shadow:1px 1px 1px #e1e2ed;
+  width: 4.4rem;
+}
+
+/*links on the buttons*/
+.name, .greybutton {
+  position: relative;
+  text-align: center;
+  top: 15%;
+}
+
+.greybutton:hover {
+	background: linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+  background-color: #bab1ba;
+  color: #19cbd0;
+  text-decoration: none;
+}
+
+.greybutton:active {
+  position: relative;
+  text-decoration: none;
+	top: 10px;
+}
+
+.bg-color { background-color: #fff; }
+
+.two-color-bg { 
+  background-image: -webkit-linear-gradient(30deg, #fff 50%, #000 50%);
+}
+
+/*profiles page*/
+.profile-titles {
+  padding-left: 5%;
+  padding-top: 2rem;
+}
+
+.post-content {
+  font-size: 1rem;
+  padding-left: 5%;
+  padding-top: 0.7rem;
+  text-align: left;
+}
+
+/*profile page*/
+.description {
+  font-size: 1.3rem;
+  padding-top: 0;
+  display: inline;
+}
+
+.person-name {
+  padding-top: 2rem;
+}
+
+/*compose page*/
+.composition {
+  padding: 30px;
+}
+
+h1.compose {
+  padding-top: 20px;
+  padding-left: 30px;
+}
+
+/*responsive*/
+@media (max-width: 780px) {
+  .black.moved {
+    animation: mymove_2 1s ease;
+  }
+}
+
+@media (max-width: 1009px) {
+  p {
+    font-size: 2.3rem;
+  }
+  #left {
+    padding-top: 36%;
+  }
+}
+
+@media (max-width: 1182px) {
+  .name {
+    font-size: 0.7rem;
+  }
+}
+
+/*div move to the right*/
+@keyframes mymove_1 {
+  from {
+     left: 20%;
+  }
+ 
+  to {
+     left: 50%;
+  }
+}
+
+/*div move downwards*/
+@keyframes mymove_2 {
+  from {
+     top: 20%;
+  }
+ 
+  to {
+     top: 50%;
+  }
+}
+
+@keyframes myanimation {
+  0%{background-color: #fcfcfc}
+  1%{background-color: #fafafa}
+  2%{background-color: #f7f7f7}
+  3%{background-color: #f5f5f5}
+  4%{background-color: #f4f4f4}
+  5%{background-color: #f3f3f3}
+  6%{background-color: #f0f0f0}
+  7%{background-color: #e8e8e8}
+  8%{background-color: #e3e3e3}  
+  9%{background-color: #e0e0e0}
+  10%{background-color: #dedede}
+  11%{background-color: #dbdbdb}
+  12%{background-color: #d9d9d9}
+  13%{background-color: #d6d6d6}
+  14%{background-color: #d4d4d4}
+  15%{background-color: #d1d1d1}
+  16%{background-color: #cfcfcf}
+  17%{background-color: #c9c9c9}
+  18%{background-color: #c7c7c7}
+  19%{background-color: #c6c6c6}
+  20%{background-color: #c4c4c4}
+  21%{background-color: #c2c2c2}
+  22%{background-color: #c0c0c0}
+  23%{background-color: #bfbfbf}
+  24%{background-color: #bdbdbd}
+  25%{background-color: #bbbbbb}
+  26%{background-color: #bababa}
+  27%{background-color: #b8b8b8}
+  28%{background-color: #b5b5b5}
+  29%{background-color: #ababab}
+  30%{background-color: #a8a8a8}
+  31%{background-color: #a6a6a6}
+  32%{background-color: #a3a3a3}
+  33%{background-color: #a1a1a1}
+  34%{background-color: #9e9e9e}
+  35%{background-color: #9c9c9c}
+  36%{background-color: #999999}
+  37%{background-color: #969696}
+  38%{background-color: #949494}
+  39%{background-color: #919191}
+  40%{background-color: #8f8f8f}
+  41%{background-color: #8c8c8c}
+  42%{background-color: #8a8a8a}
+  43%{background-color: #878787}
+  44%{background-color: #858585}
+  45%{background-color: #838383}
+  46%{background-color: #828282}
+  47%{background-color: #7f7f7f}
+  48%{background-color: #7e7e7e}
+  49%{background-color: #7d7d7d}
+  50%{background-color: #7c7c7c}
+  51%{background-color: #7b7b7b}
+  52%{background-color: #7a7a7a}
+  53%{background-color: #757575}
+  54%{background-color: #797979}
+  55%{background-color: #737373}
+  56%{background-color: #707070}
+  57%{background-color: #6e6e6e}
+  58%{background-color: #6d6d6d}
+  59%{background-color: #6b6b6b}
+  60%{background-color: #696969}
+  61%{background-color: #686868}
+  62%{background-color: #676767}
+  63%{background-color: #666666}
+  64%{background-color: #656565}
+  65%{background-color: #646464}
+  66%{background-color: #636363}
+  67%{background-color: #626262}
+  68%{background-color: #616161}
+  69%{background-color: #606060}
+  70%{background-color: #5f5f5f}
+  71%{background-color: #5e5e5e}
+  72%{background-color: #5d5d5d}
+  73%{background-color: #5c5c5c}
+  74%{background-color: #5b5b5b}
+  75%{background-color: #5a5a5a}
+  76%{background-color: #595959}
+  77%{background-color: #575757}
+  78%{background-color: #545454}
+  79%{background-color: #535353}
+  80%{background-color: #525252}
+  81%{background-color: #505050}
+  82%{background-color: #4f4f4f}
+  83%{background-color: #4e4e4e}
+  84%{background-color: #4d4d4d}
+  85%{background-color: #4b4b4b}
+  86%{background-color: #4a4a4a}
+  87%{background-color: #474747}
+  88%{background-color: #464646}
+  89%{background-color: #454545}
+  90%{background-color: #444444}
+  91%{background-color: #434343}
+  92%{background-color: #424242}
+  93%{background-color: #414141}
+  94%{background-color: #404040}
+  95%{background-color: #3f3f3f}
+  96%{background-color: #3e3e3e}
+  97%{background-color: #3d3d3d}
+  98%{background-color: #3b3b3b}
+  99%{background-color: #383838}
+  100%{background-color: #383838}
+}
+
