@@ -2,7 +2,7 @@ import React from "react";
 
 function Allgreys(props) {
   return (
-    <a href={props.href}>{props.name}</a>
+    <a style={{background: props.bgColor}} href={props.href}>{props.name}</a>
   );
 }
 
