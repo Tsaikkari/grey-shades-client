@@ -33,6 +33,11 @@ p {
   font-size: 2.7rem;
 }
 
+.greys-grid-screen {
+  height: 500px;
+  width: 400px;
+}
+
 #two-divs-screen, .greys-grid-screen {
   position: absolute;
   padding: 3% 15%;

@@ -1,8 +1,8 @@
 import React from "react";
 import Header from "./Header";
 
-var buttonIsNotClicked = "true";
 var showHeader = "false";
+var buttonIsNotClicked = "true";
 
 function App() {
   return (
