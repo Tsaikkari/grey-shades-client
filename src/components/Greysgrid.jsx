@@ -25,7 +25,7 @@ import greys from "../greys";
 function Greysgrid(props) {
   return (
     <div className="greys-grid-screen">
-    {props.isNotClicked && props.isHeader && <header>Get to know about colorful lives</header> && props.doBoxes}
+    {props.isNotClicked && props.isHeader && <header>Get to know about colorful lives</header> && props.noBoxes}
       <div className="row" id="grey">  
         <div className='col-lg-1 col-md-2 col-sm 3 col-xs-4 ml-auto mr-auto'>
         {greys.map(greyLink => (
