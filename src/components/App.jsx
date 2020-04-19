@@ -1,13 +1,15 @@
 import React from "react";
 import Header from "./Header";
 
-var buttonIsClicked = "true";
+var buttonIsNotClicked = "true";
+var showHeader = "false";
 
 function App() {
   return (
     <div>
       <Header 
-          isClicked={buttonIsClicked}
+        isHeader={showHeader}
+        isNotClicked={buttonIsNotClicked}
       />
     </div>
   );
