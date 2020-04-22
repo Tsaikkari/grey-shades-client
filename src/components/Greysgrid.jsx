@@ -22,12 +22,11 @@ import greys from "../greys";
   );
 }*/
 
-function Greysgrid(props) {
+function Greysgrid() {
   return (
-    <div className="greys-grid-screen">
-    {props.isClicked && props.isHeader && <header>Get to know about colorful lives</header> && !props.isBoxes}
-      <div className="row" id="grey">  
-        <div className='col-lg-1 col-md-2 col-sm 3 col-xs-4 ml-auto mr-auto'>
+    <div className="greys-grid-screen" id="second-screen">
+      <div id="grey">  
+        <div>
         {greys.map(greyLink => (
           <Allgreys 
             key={greyLink.id}
