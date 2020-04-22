@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Screens from "./Screens";
 import Header from "./Header";
 import Profile from "./Profile";
 import CreateArea from "./CreateArea";
@@ -24,16 +23,15 @@ function App() {
 
   return (
     <div>
-      <Screens />
       <Header />
       <CreateArea onAdd={addProfile} />
       {profiles.map((profileItem, index) => {
         return <Profile
-        key={index}
-        id={index}
-        title={profileItem.title}
-        content={profileItem.content}
-        onDelete={deleteProfile}
+          key={index}
+          id={index}
+          title={profileItem.title}
+          content={profileItem.content}
+          onDelete={deleteProfile}
         />
       })}
     </div>

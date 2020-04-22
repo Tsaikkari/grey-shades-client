@@ -1,6 +1,6 @@
 import React from "react";
 import Allgreys from "./Allgreys";
-import greys from "../greys";
+import greys from "./greys";
 
 // TODO: bgColor prop and react grid
 
