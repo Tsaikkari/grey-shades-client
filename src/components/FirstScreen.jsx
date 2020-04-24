@@ -1,8 +1,7 @@
 import React from "react";
 import Action from "./Action";
-import Greys from "./Greys";
 
-function Screens() {
+function FirstScreen() {
   let greysgrid = false;
   
   return (
@@ -24,23 +23,11 @@ function Screens() {
         </div>
         )}
       </div>
-      
-      <div>
-      {greysgrid && (
-        <div className="greys-grid-screen">
-          <div className="row" id="grey">
-            <div className="l12">
-              <Greys />
-            </div>
-          </div>
-        </div>
-      )}
-      </div>
     </div>
   );
 }
 
-export default Screens;
+export default FirstScreen;
 
 
 
