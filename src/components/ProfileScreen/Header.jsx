@@ -5,7 +5,7 @@ function Header() {
     return (
     <header>
     <h1><HighlightIcon />
-    Persons</h1>
+    People</h1>
     </header>
     )
 }

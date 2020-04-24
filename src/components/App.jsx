@@ -1,40 +1,22 @@
-import React, { useState } from "react";
-import Header from "./Header";
-import Profile from "./Profile";
-import CreateArea from "./CreateArea";
+import React from "react";
+import Screens from "./Screens";
+import greys from "../greys";
+import Greys from "./Greys";
 
 function App() {
-
-  const [profiles, setProfiles] = useState([]);
-
-  function addProfile(newProfile) {
-    setProfiles(prevProfiles => {
-      return [...prevProfiles, newProfile];
-    });
-  }
-
-  function deleteProfile(id) {
-    setProfiles(prevProfiles => {
-      return prevProfiles.filter((profileItem, index) => {
-        return index !== id;
-      })
-    })
-  }
-
   return (
-    <div>
-      <Header />
-      <CreateArea onAdd={addProfile} />
-      {profiles.map((profileItem, index) => {
-        return <Profile
-          key={index}
-          id={index}
-          title={profileItem.title}
-          content={profileItem.content}
-          onDelete={deleteProfile}
-        />
-      })}
-    </div>
+  <div>
+    <Screens />
+    {greys.map((grey) => {
+      return <Greys
+      key={grey.id}
+      id={grey.id}
+      title={grey.name}
+      href={grey.href}
+      bgColor={grey.backgroundColor}
+      />
+    })}
+  </div>
   );
 }
 
