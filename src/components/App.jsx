@@ -1,16 +1,27 @@
-import React from "react";
-import Header from "./Header";
+import React, { useState } from "react";
 import FirstScreen from "./FirstScreen";
 import GreysGrid from "./GreysGrid";
 
 function App() {
+  let [showOnScreen, setShowOnScreen] = useState(false);
+
+  function switchScreen() {
+    setShowOnScreen(true);
+    document.getElementById('two-divs-screen').style.display = "none";
+  }
+    
   return (
-  <div>
-    <Header />
+    <div>
     <FirstScreen />
-    <GreysGrid />
-  </div>
+      <div className="container-fluid" id="black-n-white-screen">
+        <button onClick={switchScreen} className="btn btn-secondary btn-lg" id="move-div">
+        THEY SAY
+        </button>
+        {showOnScreen && <GreysGrid />}
+      </div>
+    </div>
   );
 }
 
 export default App;
+

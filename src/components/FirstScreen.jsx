@@ -1,14 +1,8 @@
 import React from "react";
-import Action from "./Action";
 
 function FirstScreen() {
-  let greysgrid = false;
-  
   return (
     <div>
-      <Action />
-      <div>
-      {!greysgrid && (
       <div className="container">
         <div className="row" id="two-divs-screen">
           <div className="black s6 ml-auto mr-auto">
@@ -20,8 +14,6 @@ function FirstScreen() {
             <p className="wht">WHITE</p>
           </div>
         </div>
-        </div>
-        )}
       </div>
     </div>
   );

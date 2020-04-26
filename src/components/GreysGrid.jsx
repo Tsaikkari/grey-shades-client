@@ -1,12 +1,11 @@
 import React from "react";
-import greys from "../greys";
 import Greys from "./Greys";
+import greys from "../greys";
 
 function GreysGrid() {
-  let greysgrid = false;
   return (
     <div>
-      {greysgrid && (
+      <h1>Get to know about colorful lives</h1>
         <div className="greys-grid-screen">
           <div className="row" id="grey">
             <div className="l12">
@@ -22,7 +21,6 @@ function GreysGrid() {
             </div>
           </div>
         </div>
-      )}
     </div>
   );
 }
