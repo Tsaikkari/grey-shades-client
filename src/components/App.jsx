@@ -1,9 +1,11 @@
 import React from "react";
-import Action from "./Action";
+import AppRouter from "../router/AppRouter";
 
 function App() {
   return (
-    <Action />
+    <div>
+      <AppRouter />
+    </div>
   );
 }
 

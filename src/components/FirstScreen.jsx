@@ -1,8 +1,10 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 function FirstScreen() {
   return (
     <div>
+    <NavLink to="/greys" activeClassName="is-active" exact={true}>THEY SAY</NavLink>
       <div className="container">
         <div className="row" id="two-divs-screen">
           <div className="black s6 ml-auto mr-auto">

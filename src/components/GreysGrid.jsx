@@ -1,5 +1,5 @@
 import React from "react";
-import Greys from "./Greys";
+import Grey from "./Grey";
 import greys from "../greys";
 
 function GreysGrid() {
@@ -10,7 +10,7 @@ function GreysGrid() {
           <div className="row" id="grey">
             <div className="l12">
             {greys.map((grey) => {
-              return <Greys
+              return <Grey  
                 key={grey.id}
                 id={grey.id}
                 title={grey.name}

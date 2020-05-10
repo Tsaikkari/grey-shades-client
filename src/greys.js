@@ -1,13 +1,16 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+
 let greys = [
     {
         id: "1",
-        href: "/posts/5e91ef5c2a788670b3c2004b",
+        href: <Link to="/greys/1"></Link>,
         name: "Noether",
         backgroundColor: "#fcfcfc",
     },
     {
         id: "2",
-        href: "/posts/5e91efecf7230e7195e08a8f",
+        href: <Link to="/greys/2"></Link>,
         name: "Mozart",
         backgroundColor: "#f7f7f7"
     },
