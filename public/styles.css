@@ -2,242 +2,248 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-  }
+}
 
-  html {
-    font-family: "Montserrat", sans-serif;
-  }
+html {
+  font-family: "Montserrat", sans-serif;
+}
 
-  body {
-    background-color: #cfcfcf;
-   /* background-color: #baf5f2;
-    background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
-    /*background-color: #baf5f2;
-    background-image: url("https://www.transparenttextures.com/patterns/subtle-dark-vertical.png");*/
-    padding: 0 16px;
-  }
+body {
+  background-color: #cfcfcf;
+  /* background-color: #baf5f2;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+  /*background-color: #baf5f2;
+  background-image: url("https://www.transparenttextures.com/patterns/subtle-dark-vertical.png");*/
+  padding: 0 16px;
+}
 
-  section {
-    text-align: center;
-    padding-top: 10px;
-  }
-  
-  #black-n-white-screen {
-    padding-top: 2rem;
-  }
+section {
+  text-align: center;
+  padding-top: 10px;
+}
 
-  .greys-grid-screen {
-    height: 500px;
-    width: 400px;
-  }
-  
-  #two-divs-screen, .greys-grid-screen {
-    position: absolute;
-    padding: 3% 15%;
-    text-align: center;
-  }
+#black-n-white-screen {
+  padding-top: 2rem;
+}
 
-  .container-fluid p {
-    text-align: center;
-    padding-top: 33%;
-    font-size: 2.7rem;
-  }
-  
-  .black, .white {
-    width: 370px;
-    height: 450px;
-  }
-  
-  /*black box*/
-  .black {
-    background-color: black;
-    color: white;
-    float: left;
-    letter-spacing: 2rem;
-    padding-left: 6%;
-    padding-top: 1.4%;
-    position: relative;
-  }
-  
-  /*white box*/
-  .white {
-    background-color: white;
-    color: black;
-    float: right;
-    letter-spacing: 0.7rem;
-    position: relative;
-  }
+.greys-grid-screen {
+  height: 500px;
+  padding-top: 4rem;
+  width: 900px;
+}
 
-  /*text on the boxes*/
-.container p {
+#two-divs-screen {
+  position: absolute;
+  padding: 3% 15%;
+  text-align: center;
+}
+
+.container-fluid p {
   text-align: center;
   padding-top: 33%;
   font-size: 2.7rem;
 }
 
-   
-  /** words on the white box **/
-  .blk {
-    font-size: 2.9rem;
-    padding-left: 13%;
-  }
-  
-  p.wht {
-    font-size: 2.7rem;
-    padding-right: 7%;
-    padding-top: 0;
-  }
-  
-  p.and {
-    padding-right: 29%;
-    padding-top: 0;
-  }
+.black, .white {
+  width: 370px;
+  height: 450px;
+}
 
-  /*buttons*/
-  /* they say -button */
-  #move-div {
-    box-shadow: 3px 4px 0px 0px #899599;
-    background: linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
-    color: #000;
-    border-radius: 5px;
-    border: 1px solid #d6bcd6;
-    display: inline-block;
-    cursor: pointer;
-    text-shadow:0px 1px 0px #e1e2ed;
-    /*margin-left: 45%;
-    margin-bottom: 2rem;*/
-  }
+/*black box*/
+.black {
+  background-color: black;
+  color: white;
+  float: left;
+  letter-spacing: 2rem;
+  padding-left: 6%;
+  padding-top: 1.4%;
+  position: relative;
+}
 
-  #move-div:hover {
-    background: linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
-    background-color: #bab1ba;
-  }
+/*white box*/
+.white {
+  background-color: white;
+  color: black;
+  float: right;
+  letter-spacing: 0.7rem;
+  position: relative;
+}
 
-  #move-div:active {
-    position: relative;
-    top: 1px;
-  }
-
-  /* second page */
-  /*grey-grid buttons*/
-  .greybutton {
-    box-shadow: 1px 4px 1px 2px #899599;
-    border-radius: 5px;
-    border: 1px solid #d6bcd6;
-    display: inline-block;
-    cursor: pointer;
-    color: #000;
-    font-size: 0.75rem;
-    height: 2.5rem;
-    padding: 7px 7px;
-    text-decoration: none;
-    text-shadow:1px 1px 1px #e1e2ed;
-    width: 4.4rem;
-  }
-
-  /*links on the buttons*/
-  .name, .greybutton {
-    position: relative;
-    text-align: center;
-    top: 15%;
-  }
-
-  .greybutton:hover {
-    background: linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
-    background-color: #bab1ba;
-    color: #19cbd0;
-    text-decoration: none;
-  }
-
-  .greybutton:active {
-    position: relative;
-    text-decoration: none;
-    top: 10px;
-  }
+/*text on the boxes*/
+.container p {
+text-align: center;
+padding-top: 33%;
+font-size: 2.7rem;
+}
 
   
-  header {
-    background-color: #50a3a2;
-    margin: auto -16px;
-    padding: 16px 32px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
-  }
-  
-  header h1 {
-    color: #fff;
-    font-family: "McLaren", cursive;
-    font-weight: 200;
-  }
-  
-  .profile {
-    background: #fff;
-    border-radius: 7px;
-    box-shadow: 0 2px 5px #ccc;
-    padding: 10px;
-    width: 60%;
-    margin: 16px;
-    float: left;
-  }
+/** words on the white box **/
+.blk {
+  font-size: 2.9rem;
+  padding-left: 13%;
+}
 
-  .profile h1 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
+p.wht {
+  font-size: 2.7rem;
+  padding-right: 7%;
+  padding-top: 0;
+}
 
-  .profile p {
-    font-size: 1.1em;
-    margin-bottom: 10px;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-  }
-  
-  .profile button {
-    position: relative;
-    float: right;
-    margin-right: 10px;
-    border: none;
-    width: 36px;
-    height: 36px;
-    cursor: pointer;
-    outline: none;
-  }
-  
-  form.create-profile {
-    position: relative;
-    width: 60%;
-    margin: 16px;
-    float: left;
-    background: #fff;
-    padding: 15px;
-    border-radius: 7px;
-    box-shadow: 0 1px 5px rgb(138, 137, 137);
-  }
+p.and {
+  padding-right: 29%;
+  padding-top: 0;
+}
 
-  form.create-profile input,
-  form.create-profile textarea {
-    width: 100%;
-    border: none;
-    padding: 4px;
-    outline: none;
-    font-size: 1.2em;
-    font-family: inherit;
-    resize: none;
-  }
+/*buttons*/
+/* they say -button */
+#move-div {
+  box-shadow: 3px 4px 0px 0px #899599;
+  background: linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+  color: #000;
+  border-radius: 5px;
+  border: 1px solid #d6bcd6;
+  display: inline-block;
+  cursor: pointer;
+  text-shadow:0px 1px 0px #e1e2ed;
+  /*margin-left: 45%;
+  margin-bottom: 2rem;*/
+}
 
-  form.create-profile button {
-    position: absolute;
-    right: 18px;
-    bottom: -18px;
-    background-color: #80cac9;
-    color: #fff;
-    border: none;
-    border-radius: 50%;
-    width: 36px;
-    height: 36px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    outline: none;
-  }
+#move-div:hover {
+  background: linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+  background-color: #bab1ba;
+}
 
-  
-  
+#move-div:active {
+  position: relative;
+  top: 1px;
+}
+
+/* second page */
+/*grey-grid buttons*/
+.greybutton {
+  box-shadow: 1px 4px 1px 2px #899599;
+  border-radius: 5px;
+  border: 1px solid #d6bcd6;
+  display: inline-block;
+  cursor: pointer;
+  color: #000;
+  font-size: 0.75rem;
+  height: 2.5rem;
+  padding: 7px 7px;
+  text-decoration: none;
+  text-shadow:1px 1px 1px #e1e2ed;
+  width: 4.4rem;
+}
+
+/*links on the buttons*/
+.name, .greybutton {
+  position: relative;
+  text-align: center;
+  top: 15%;
+}
+
+.greybutton:hover {
+  background: linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+  background-color: #bab1ba;
+  color: #19cbd0;
+  text-decoration: none;
+}
+
+.greybutton:active {
+  position: relative;
+  text-decoration: none;
+  top: 10px;
+}
+
+h1 {
+  color: #80cac9;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+
+header {
+  background-color: #50a3a2;
+  margin: auto -16px;
+  padding: 16px 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  color: #fff;
+  font-family: "McLaren", cursive;
+  font-weight: 200;
+}
+
+.profile {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: 60%;
+  margin: 16px;
+  float: left;
+}
+
+.profile h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.profile p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.profile button {
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  border: none;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  outline: none;
+}
+
+form.create-profile {
+  position: relative;
+  width: 60%;
+  margin: 16px;
+  float: left;
+  background: #fff;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+
+form.create-profile input,
+form.create-profile textarea {
+  width: 100%;
+  border: none;
+  padding: 4px;
+  outline: none;
+  font-size: 1.2em;
+  font-family: inherit;
+  resize: none;
+}
+
+form.create-profile button {
+  position: absolute;
+  right: 18px;
+  bottom: -18px;
+  background-color: #80cac9;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+}
+
+

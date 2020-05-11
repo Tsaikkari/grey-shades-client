@@ -1,10 +1,11 @@
 import React from "react";
+import Col from 'react-bootstrap/Col';
 
 function Grey(props) {
   return (
-    <div>
-      <a href={props.href} style={{background: props.bgColor}}>{props.title}</a>
-    </div>
+    <Col className="greybutton" style={{background: props.bgColor}} lg={1} md={1} sx={4} key={props.id}>
+      <a href={props.href}>{props.title}</a>
+    </Col>
   );
 }
 
